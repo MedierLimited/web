@@ -1,7 +1,7 @@
 body {
-    background-image: -webkit-image-set(url('../img/background.png') 1x, url('../img/background@2x.png') 2x, url('../img/background@3x.png') 3x), linear-gradient( #F8D851, #F8D851);
     background: url('../img/background.png');
     background-color: #F8D851;
+    background-image: -webkit-image-set(url('../img/background.png') 1x, url('../img/background@2x.png') 2x, url('../img/background@3x.png') 3x), linear-gradient( #F8D851, #F8D851);
     text-align: center;
     margin: 0;
     padding-bottom: 15px;
@@ -42,9 +42,9 @@ div{
     padding-top: 20.2px;
     position: sticky;
     top: 0px;
-    background-image: -webkit-image-set(url('../img/background.png') 1x, url('../img/background@2x.png') 2x, url('../img/background@3x.png') 3x), linear-gradient( #F8D851, #F8D851);
     background: url('../img/background.png');
     background-color: #F8D851;
+    background-image: -webkit-image-set(url('../img/background.png') 1x, url('../img/background@2x.png') 2x, url('../img/background@3x.png') 3x), linear-gradient( #F8D851, #F8D851);
     border-spacing: 0px;
     border: 0;
     border-width: 0px;
@@ -100,8 +100,8 @@ div{
 .logo {
     width: 339px;
     height: 99px;
-    background-image: -webkit-image-set(url('../img/logo.png') 1x, url('../img/logo@2x.png') 2x, url('../img/logo@3x.png') 3x);
     background: url('../img/logo.png');
+    background-image: -webkit-image-set(url('../img/logo.png') 1x, url('../img/logo@2x.png') 2x, url('../img/logo@3x.png') 3x);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -163,14 +163,14 @@ div{
 .label_pressed {
     width: 355px;
     height: 38px;
-    background-image: -webkit-image-set(url('../img/label.png') 1x, url('../img/label@2x.png') 2x, url('../img/label@3x.png') 3x);
     background: url('../img/label.png');
+    background-image: -webkit-image-set(url('../img/label.png') 1x, url('../img/label@2x.png') 2x, url('../img/label@3x.png') 3x);
     background-repeat: no-repeat;
 }
 
 .label_normal {
-    background-image: -webkit-image-set(url('../img/label_normal.png') 1x, url('../img/label_normal@2x.png') 2x, url('../img/label_normal@3x.png') 3x);
     background: url('../img/label_normal.png');
+    background-image: -webkit-image-set(url('../img/label_normal.png') 1x, url('../img/label_normal@2x.png') 2x, url('../img/label_normal@3x.png') 3x);
     background-repeat: no-repeat;
 }
 
@@ -261,8 +261,8 @@ div{
 }
 
 .icon_at40 {
-    background-image: -webkit-image-set(url('../img/icons/AT40.png') 1x, url('../img/icons/AT40@2x.png') 2x, url('../img/icons/AT40@3x.png') 3x);
     background: url('../img/icons/AT40.png');
+    background-image: -webkit-image-set(url('../img/icons/AT40.png') 1x, url('../img/icons/AT40@2x.png') 2x, url('../img/icons/AT40@3x.png') 3x);
     width:71px;
     height: 71px;
     margin-top: 11px;
@@ -275,8 +275,8 @@ div{
 }
 
 .icon_01 {
-    background-image: -webkit-image-set(url('../img/icons/01.png') 1x, url('../img/icons/01@2x.png') 2x, url('../img/icons/01@3x.png') 3x);
     background: url('../img/icons/01.png');
+    background-image: -webkit-image-set(url('../img/icons/01.png') 1x, url('../img/icons/01@2x.png') 2x, url('../img/icons/01@3x.png') 3x);
     width:71px;
     height: 71px;
     margin-top: 11px;
@@ -285,8 +285,8 @@ div{
 }
 
 .icon_01_up {
-    background-image: -webkit-image-set(url('../img/icons/01_up.png') 1x, url('../img/icons/01_up@2x.png') 2x, url('../img/icons/01_up@3x.png') 3x);
     background: url('../img/icons/01_up.png');
+    background-image: -webkit-image-set(url('../img/icons/01_up.png') 1x, url('../img/icons/01_up@2x.png') 2x, url('../img/icons/01_up@3x.png') 3x);
     width:71px;
     height: 71px;
     margin-top: 11px;
@@ -295,8 +295,8 @@ div{
 }
 
 .icon_02 {
-    background-image: -webkit-image-set(url('../img/icons/02.png') 1x, url('../img/icons/02@2x.png') 2x, url('../img/icons/02@3x.png') 3x);
     background: url('../img/icons/02.png');
+    background-image: -webkit-image-set(url('../img/icons/02.png') 1x, url('../img/icons/02@2x.png') 2x, url('../img/icons/02@3x.png') 3x);
     width:71px;
     height: 71px;
     margin-top: 11px;
@@ -305,8 +305,8 @@ div{
 }
 
 .icon_02_up {
-    background-image: -webkit-image-set(url('../img/icons/02_up.png') 1x, url('../img/icons/02_up@2x.png') 2x, url('../img/icons/02_up@3x.png') 3x);
     background: url('../img/icons/02_up.png');
+    background-image: -webkit-image-set(url('../img/icons/02_up.png') 1x, url('../img/icons/02_up@2x.png') 2x, url('../img/icons/02_up@3x.png') 3x);
     width:71px;
     height: 71px;
     margin-top: 11px;
@@ -315,8 +315,8 @@ div{
 }
 
 .icon_03 {
-    background-image: -webkit-image-set(url('../img/icons/03.png') 1x, url('../img/icons/03@2x.png') 2x, url('../img/icons/03@3x.png') 3x);
     background: url('../img/icons/03.png');
+    background-image: -webkit-image-set(url('../img/icons/03.png') 1x, url('../img/icons/03@2x.png') 2x, url('../img/icons/03@3x.png') 3x);
     width:71px;
     height: 71px;
     margin-top: 11px;
@@ -325,8 +325,8 @@ div{
 }
 
 .icon_03_up {
-    background-image: -webkit-image-set(url('../img/icons/03_up.png') 1x, url('../img/icons/03_up@2x.png') 2x, url('../img/icons/03_up@3x.png') 3x);
     background: url('../img/icons/03_up.png');
+    background-image: -webkit-image-set(url('../img/icons/03_up.png') 1x, url('../img/icons/03_up@2x.png') 2x, url('../img/icons/03_up@3x.png') 3x);
     width:71px;
     height: 71px;
     margin-top: 11px;
@@ -335,8 +335,8 @@ div{
 }
 
 .icon_04 {
-    background-image: -webkit-image-set(url('../img/icons/04.png') 1x, url('../img/icons/04@2x.png') 2x, url('../img/icons/04@3x.png') 3x);
     background: url('../img/icons/04.png');
+    background-image: -webkit-image-set(url('../img/icons/04.png') 1x, url('../img/icons/04@2x.png') 2x, url('../img/icons/04@3x.png') 3x);
     width:71px;
     height: 71px;
     margin-top: 11px;
@@ -345,8 +345,8 @@ div{
 }
 
 .icon_04_up {
-    background-image: -webkit-image-set(url('../img/icons/04_up.png') 1x, url('../img/icons/04_up@2x.png') 2x, url('../img/icons/04_up@3x.png') 3x);
     background: url('../img/icons/04_up.png');
+    background-image: -webkit-image-set(url('../img/icons/04_up.png') 1x, url('../img/icons/04_up@2x.png') 2x, url('../img/icons/04_up@3x.png') 3x);
     width:71px;
     height: 71px;
     margin-top: 11px;
