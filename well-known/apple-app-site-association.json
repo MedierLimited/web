@@ -5,7 +5,7 @@
             {
                 "appID": "HYQ63F3827.io.medier.family",
                 "paths": [
-                    "/well-known/*"
+                    "/.well-known/*"
                 ]
             }
         ]
