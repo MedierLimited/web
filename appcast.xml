@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>StudyApp</title>
+        <item>
+            <title>1.2</title>
+            <pubDate>Sun, 27 Nov 2022 14:31:46 +0800</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://cloud.medier.io/index.php/s/bgJMGz3YBtfqiFa/download/StudyApp.zip" length="47237215" type="application/octet-stream" sparkle:edSignature="fTcPoh5C6kg5OyzzjcWCv82I7sbab9P+UhM0gwnVUl7fp04t+LWW92KMro/X0ZbuUkUt/ohfotWaPWQPSOrICA=="/>
+            <sparkle:tags>
+            <sparkle:criticalUpdate></sparkle:criticalUpdate>
+            </sparkle:tags>
+        </item>
+    </channel>
+</rss>
