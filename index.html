@@ -1,33 +1,58 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes" />
-<title>米滴科技有限公司</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" >
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet" >
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
-<meta name="appleid-signin-client-id" content="[CLIENT_ID]">
-<meta name="appleid-signin-scope" content="[SCOPES]">
-<meta name="appleid-signin-redirect-uri" content="[REDIRECT_URI]">
-<meta name="appleid-signin-state" content="[STATE]">
-<style>
-    .signin-button {
-        width: 210px;
-        height: 40px;
-    }
-</style>
-</head>
-<body>
-    <table class="main" border=0>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="styles/style.css" rel="stylesheet" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script src="https://kit.fontawesome.com/a4cd5acd54.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function() {
+            $( ".arrow-icon" ).click(function() {
+                $(this).toggleClass("open");
+            });
+        });
+    </script>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <table border="0" width="100%">
         <tr>
-            <td style="vertical-align:top">
-            米滴科技有限公司
+            <td height="100" style="vertical-align:middle;">
+                <table>
+                    <tr>
+                        <td class="logo">
+                        <img src="img/logo.png" width=36 srcset="img/logo2x.png, img/logo3x.png 3x"/> <span class="logo-text" style="vertical-align:middle;">米滴科技</span>
+                        </td>
+                        <td width="80">
+                            &nbsp;
+                        </td>
+                        <td class="top" width="100">
+                            <span class="top">關於</span>
+                            <i class="fa-solid fa-chevron-down"/>
+                        </td>
+                    </tr>
+                </table>
+            
+            <td></td>
+        </tr>
+        <tr>
+            <td align="center" class="grad">
+                <br><br>
+                <h1>客製化軟體</h1><br>
+                影音串流，後端API串接
+                <br><br>
+                <table>
+                    <tr>
+                        <td style="vertical-align: top;"><img src="img/iPhone.png" width="200"></td>
+                        <td style="vertical-align: top;"><img src="img/iPad.png" width="200"></td>
+                        <td style="vertical-align: top;"><img src="img/watch.png" width="200"></td>
+                    </tr>
+                </table>
             </td>
         </tr>
     </table>
-    <div id="appleid-signin" class="signin-button" data-color="black" data-border="true" data-type="sign-in"></div>
-        <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
-</body>
+  </body>
 </html>
