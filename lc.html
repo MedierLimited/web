@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content = "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://lc-qa.amwaynet.com.tw/alc/lch5/1.0.0/loginCenter-qa.min.css"/>
+<script src="https://lc-qa.amwaynet.com.tw/alc/lch5/1.0.0/loginCenter-qa.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<title>Amcard LC</title>
+<script>
+    var _jsToken = "debug";
+    if (_jsToken == "Error") 
+    {
+		alert('系統發生錯誤,請稍後再試!')
+    }
+    else 
+    {
+       var lc = new LoginCenter( {
+			"renderTo": ".login-panel",
+			"channel": "amcard",
+			"token": _jsToken,
+			"showLogo": true,
+			"showRegisterPFOA": false,
+			"loginType": "2",
+			"PFOARedirectUrl": '',
+			"bindPhoneRedirectUrl": '" + redirectURL + "?token=debug',
+			"updateToken": function(result) {
+				alert("updateToken");
+				console.log(result);
+			},
+			success: function(data) {
+				console.log(data);
+				if (data.result.userTicket) {
+					try {
+						//webkit.messageHandlers.callback.postMessage(data.result.userTicket);
+					} catch(err) {
+						console.log('no callback');
+					}
+				}
+           },
+           error: function(data) {
+				//alert('error');
+				console.log(data);
+				try {
+					//webkit.messageHandlers.callback.postMessage("cbee950a88734123845941f12ae318ee");
+				} catch(err) {
+					console.log('no callback');
+				}
+           }
+       });
+   }
+</script>
+</head>
+<body>
+	login page
+   <div class="login-panel"></div>
+   <button id="callapp">送訊息至app</button>
+	<script>
+	$('#callapp').on('click', () => {
+		alert("send alert");
+		callNativeApp("cbee950a88734123845941f12ae318ee");
+	});
+
+	function callNativeApp(data) {
+		console.log('send message');
+		try {
+			webkit.messageHandlers.callback.postMessage(data);
+		} catch(err) {
+			console.log('no callback');
+		}
+	}
+	</script>
+</body>
+
