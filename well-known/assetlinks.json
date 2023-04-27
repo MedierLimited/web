@@ -1,0 +1,5 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "tw.familymart.supersell",
+               "sha256_cert_fingerprints": ["DC:8C:09:9E:D3:C5:E7:C1:25:66:B6:33:2B:64:45:05:AE:FC:8E:7E:1D:1D:0F:52:1D:7E:50:38:93:05:24:AA"] }
+}]
