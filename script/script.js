@@ -1,6 +1,28 @@
 
 const menuToggle = document.querySelector('.menu-toggle');
 const mainNav = document.querySelector('.main-nav');
+const solutionCards = document.querySelectorAll('.solution-card');
+
+function selectSolution(card) {
+  solutionCards.forEach((item) => {
+    const selected = item === card;
+    item.classList.toggle('is-selected', selected);
+    item.setAttribute('aria-pressed', String(selected));
+  });
+}
+
+solutionCards.forEach((card) => {
+  card.addEventListener('click', (event) => {
+    if (event.target.closest('a')) return;
+    selectSolution(card);
+  });
+  card.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      selectSolution(card);
+    }
+  });
+});
 
 if (menuToggle && mainNav) {
   menuToggle.addEventListener('click', () => {
@@ -35,7 +57,7 @@ function logout()
 	location = "collection.aspx?label=logout";
 }
 
-$(document).ready(function(){
+if (window.jQuery) $(document).ready(function(){
 	$("#input_1").keyup(function(e) { 
 	   if (this.value.length >= $(this).data("maxlength")) { 
 	   $("#input_2").focus();
