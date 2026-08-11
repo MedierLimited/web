@@ -38,51 +38,29 @@ if (menuToggle && mainNav) {
   });
 }
 
-function goCollectionPage() {
-   location = "https://amway.dm/3z4xla/";
-}
+const revealSelector = [
+  '.solution-card', '.home-product-feature', '.security-items > div', '.home-product-shot',
+  '.stats > div', '.tech-tags span', '.product-feature', '.security-grid article',
+  '.platform-grid > div', '.product-points > div', '.product-shot',
+].join(',');
 
-function goGetGift()
-{
-	if ($("#input_1").val().length == 2 && $("#input_2").val().length == 6) {
-		var yes = confirm('確認進行集章嗎？');
-		if (yes) {
-			$("#form").submit();
-		}
-	}
-}
+if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('in');
+      io.unobserve(entry.target);
+      setTimeout(() => {
+        entry.target.classList.remove('reveal', 'in');
+        entry.target.style.transitionDelay = '';
+      }, 1000);
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-function logout()
-{
-	location = "collection.aspx?label=logout";
+  document.querySelectorAll(revealSelector).forEach((el) => {
+    const idx = Array.from(el.parentElement.children).indexOf(el);
+    el.classList.add('reveal');
+    el.style.transitionDelay = `${Math.min(idx, 7) * 70}ms`;
+    io.observe(el);
+  });
 }
-
-if (window.jQuery) $(document).ready(function(){
-	$("#input_1").keyup(function(e) { 
-	   if (this.value.length >= $(this).data("maxlength")) { 
-	   $("#input_2").focus();
-	   }
-	});
-	$("#input_2").keyup(function(e) {
-	   if (this.value.length == 0)
-	   {
-	   $("#input_1").focus();
-	   }
-	});
-	$("#input_1").bind("input", function() {
-		$("#input_1").val(this.value.replace(/[^0-9]/gi, ''));
-		if ($("#input_1").val().length == 2 && $("#input_2").val().length == 6) {
-		   $("#input_button").attr('class', 'input_button_up');
-		} else {
-			$("#input_button").attr('class', 'input_button');
-		}
-	});
-	$("#input_2").bind("input", function() {
-		$("#input_2").val(this.value.replace(/[^a-zA-Z0-9]/gi, ''));
-		if ($("#input_1").val().length == 2 && $("#input_2").val().length == 6) {
-			$("#input_button").attr('class', 'input_button_up');
-		} else {
-			$("#input_button").attr('class', 'input_button');
-		}
-	});
-});
